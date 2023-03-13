@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.profile {
+    border-radius: 100px;
+    height: 35px;
+}
+
+.item1 > .profile {
+    border: 2px solid hsl(0, 0%, 81%, .5);
+}
+
+.item4 > .profile {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.grid-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template: 280px 260px / repeat(4,250px);
+    gap: 25px;
+}
+
+/*item1*/
+
+.item1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: 1 / 1 / 1 / 3;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.quote {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 262px;
+    height: 110px;
+}
+
+.item1 > .name {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 81%);
+}
+
+.item1 > .status {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 81%, .5);
+}
+
+.item1 > .main-quote {
+    margin-top: 8px;
+    color: white;
+    position: relative;
+}
+
+.item1 > .text {
+    color: white;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/*item2*/
+
+.item2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: 1 / 3 / 1 / 3;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.item2 > .name {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 81%);
+}
+
+.item2 > .status {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 81%, .5);
+}
+
+.item2 > .main-quote {
+    margin-top: 8px;
+    color: white;
+}
+
+.item2 > .text {
+    color: white;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/*item3*/
+
+.item3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 2 / 1 / 2 / 1;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
+}
+
+.item3 > .name {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 0%);
+}
+
+.item3 > .status {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 55px;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.item3 > .main-quote {
+    margin-top: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.item3 > .text {
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/*item4*/
+
+.item4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: 2 / 2 / 2 / 4;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.item4 > .name {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 81%);
+}
+
+.item4 > .status {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 81%, .5);
+}
+
+.item4 > .main-quote {
+    margin-top: 8px;
+    color: white;
+}
+
+.item4 > .text {
+    color: white;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/*item5*/
+
+.item5 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 1 / 4 / 3 / 5;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
+}
+
+.item5 > .name {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 55px;
+    color: hsl(0, 0%, 0%);
+}
+
+.item5 > .status {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 55px;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.item5 > .main-quote {
+    margin-top: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.item5 > .text {
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/* General features */
+
+.name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.status {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.main-quote {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1100px) {
+    body {
+        overflow: visible;
+    }
+
+    .grid-container {
+        height: auto;
+        display: grid;
+        grid-template: 280px 280px 260px / repeat(3,250px);
+        margin-top: 30px;
+    }
+
+    .item2 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    .item3 {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    .item4 {
+        grid-area: 3 / 1 / 3 / 3;
+    }
+
+    .item5 {
+        grid-area: 1 / 3 / 3 / 3;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    body {
+        overflow: visible;
+        height: auto;
+    }
+
+    .grid-container {
+        height: auto;
+        display: grid;
+        grid-template: 280px 280px 260px 280px / repeat(2,250px);
+        margin-top: 30px;
+    }
+
+    .item2 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    .item3 {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    .item4 {
+        grid-area: 3 / 1 / 3 / 3;
+    }
+
+    .item5 {
+        grid-area: 4 / 1 / 4 / 3;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        overflow: visible;
+        height: auto;
+    }
+
+    .grid-container {
+        height: auto;
+        display: grid;
+        grid-template: auto 260px 260px 280px / 375px;
+        margin-top: 30px;
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 3 / 1;
+    }
+
+    .item2 {
+        grid-area: 3 / 1 / 4 / 1;
+    }
+
+    .item3 {
+        grid-area: 4 / 1 / 5 / 1;
+    }
+
+    .item4 {
+        grid-area: 5 / 1 / 7 / 1;
+    }
+
+    .item5 {
+        grid-area: 7 / 1 / 9 / 1;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        overflow: visible;
+        height: auto;
+    }
+
+    .grid-container {
+        height: auto;
+        display: grid;
+        grid-template: auto 260px 260px 280px / 300px;
+        margin-top: 30px;
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 3 / 1;
+    }
+    
+    .quote {
+        margin-left: 100px;
+    }
+
+    .item2 {
+        grid-area: 3 / 1 / 4 / 1;
+    }
+
+    .item3 {
+        grid-area: 4 / 1 / 5 / 1;
+        height: fit-content;
+    }
+
+    .item4 {
+        grid-area: 5 / 1 / 7 / 1;
+        margin-top: -45px;
+    }
+
+    .item5 {
+        grid-area: 7 / 1 / 9 / 1;
+    }
+}
